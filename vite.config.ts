@@ -89,4 +89,16 @@ export default defineConfig({
       clientFiles: ['./src/app/**/*', './src/app/root.tsx', './src/app/routes.ts'],
     },
   },
+  export default defineConfig({
+  // ... existing configuration ...
+
+  // ADD THIS BLOCK:
+  build: {
+    // This tells the compiler (esbuild) to use a target environment that
+    // supports all modern features, including Top-Level Await.
+    target: 'esnext',
+  },
+  
+  // ... existing configuration ...
+});
 });
