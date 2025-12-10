@@ -90,7 +90,6 @@ export default defineConfig({
     },
   },
   export default defineConfig({
-  // ... existing configuration ...
   build: {
     // This tells the compiler (esbuild) to use a target environment that
     // supports all modern features, including Top-Level Await.
